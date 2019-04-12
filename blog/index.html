@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="gradient-6" data-spy="scroll" data-target="#navbar-nav">
+
+    <!-- =========== Preloader Start ============ -->
+    <div class="preloader-main">
+        <div class="preloader-wapper">
+            <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+                <defs>
+                    <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
+                    </filter>
+                </defs>
+                <g filter="url(#goo)">
+                    <circle class="dot bg-fill-primary " cx="50" cy="50" r="25" />
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#4c83ff" />
+                </g>
+            </svg>
+            <div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+            <div class="container position-relative">
+                <a class="navbar-brand mr-70" href="">
+                    <img class="navbar-brand__sticky" src="img/brand-logo-color.png" alt="sticky brand-logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="navbar-inner ml-lg-auto">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#project">Protect</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#plateform">Platform</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="nav-item d-lg-none d-md-none d-sm-none d-inline-block"><a class="nav-link" href="" data-toggle="modal" data-target="#myModal">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-row d-md-flex mr-70 mr-lg-0 d-none d-sm-inline-block">
+                    <a href="" data-toggle="modal" data-target="#myModal" class="btn btn--outline btn--sm btn-3d-hover btn-splash-hover ">
+                        <span class="btn__text">Login</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header text-center border-0 pt-lg-5">
+                        <h1 class="text-center color-primary mb-0 text-uppercase">Welcome back</h1>
+                        <button type="button" class="btn btn-close close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body mt-0 pl-5 pb-5 pr-5">
+                        <form class="form form--sm">
+                            <div class="form-group mb-20">
+                                <label class="label-control" for="e-mail">Email Address:</label>
+                                <input type="email" class="form-control" id="e-mail" placeholder="i.e. John Doe">
+                            </div>
+                            <div class="form-group mb-20">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label class="label-control" for="password">Password:</label>
+                                    <a class="small btn--color-primary btn-text-hover" href="#">Forgot Password?</a>
+                                </div>
+                                <input type="password" class="form-control" id="password" placeholder="*****">
+                            </div>
+                            <!--<div class="form-group custom-control custom-checkbox d-flex align-items-center justify-content-between">-->
+                            <div class="form-group text-right">
+                                <!--<input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Keep me logged in</label>-->
+                                <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-sm btn--bg-primary btn-splash-hover btn-3d-hover"><span class="btn__text">Login</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- =========== Start of Hero ============ -->
+        <section class="space-bottom--lg hero hero--dark bg-color-primary hidden" id="home">
+            <div class="background-holder opacity-05 z-index-1" style="background-image: url(img/landing-img.jpg);background-repeat: no-repeat;">
+                <img src="img/landing-img.jpg" alt="hero-image" class="background-image-holder" style="display: none;">
+            </div>
+            <!-- end of top left image -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="align-items-lg-start text-md-center">
+                            <picture class="hero__image mt-4"><img src="img/logo.png" alt="hero-image"></picture>
+                            <div class="hero-content py-lg-4 pb-80 text-center"><h1 class="hero__title font-w-400">Keeping communities safe</h1></div>
+                            <br/><br/>
+                            <a href="#about" class="mt-xl-5 mb-md-4 bounce"><i class="fa fa-arrow-down fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+            <div class="hero__shape"><img src="img/shap1.png" alt="hero bg" class="svg"></div>
+        </section>
+
+
+
+        <section class="space-top" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <div class="section-title reveal text-center mb-80">
+                            <h3 class="mb-10 text-uppercase font-w-700">ABOUT US</h3>
+                            <p class="font-w-400">Short-Term Rentals have affected the security of our communities and multi-family buildings. Neighborty intends to keep our buildings secure and ensure that tenants' intention is to live and enjoy the space for themselves.</p>
+                        </div>
+                        <!-- end of section title -->
+                    </div>
+                </div>
+                <!-- end of row -->
+                <div class="row border-bottom-light about_ul">
+                    <div class="col-12 col-md-7 col-lg-7 mb-30 mb-lg-0">
+                        <img src="img/hand_bg.png">
+                    </div>
+
+                    <!-- end of col -->
+                    <div class="col-12 col-md-5 col-lg-5 mb-30 mb-lg-0">
+                        <div class="features mt-lg-5">
+                            <br/>
+                            <div class="d-flex mb-20"><h5>With Neighborty You Can</h5></div>
+                            <ul>
+                                <li>Secure your building community.</li>
+                                <li>Save thousands of dollars in lawyer fees.</li>
+                                <li>Be transparent with other buildings in your area.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+
+
+        <!-- =========== Start of Features ============ -->
+        <section class="space bg-color-grey" id="quick">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
+                        <div class="section-title reveal text-center mb-80">
+                            <h3 class="mb-10 text-uppercase font-w-700">Quick Facts</h3>
+                            <p class="font-w-400">4,000+ violators || 500+ communities secured</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-30 mb-lg-0">
+                        <div class="features">
+                            <div class="mb-20 text-center">
+                                <span class="mb-20"><img src="img/rent_icon.png" alt=""></span>
+                            </div>
+                            <p>3 out of 4 rentals in New York City was found to be illegal in 2014<br/>(source: New York Times)</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-2 col-lg-2 mb-30 mb-lg-0">
+                        <div class="features"></div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 mb-30 mb-lg-0">
+                        <div class="features">
+                            <div class="mb-20 text-center">
+                                <span class="mb-20"><img src="img/airbab_icon.png" alt=""></span>
+                            </div>
+                            <p>Airbnb can easily filter out illegal listings.<br/>Instead, they're putting the burden on local communities and landlords to take a stand. So we're here to help!</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+
+
+
+
+        <section class="bg-color-primary space" id="project">
+            <div class="background-holder background-holder--contain">
+                <img src="img/cta-bg.png" alt="pattern" class="background-image-holder">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-center mx-auto reveal">
+                        <h3 class="mb-20 font-w-400">PROTECT</h3>
+                        <p class="lead mb-50">With Neighborty, Protect Your Community from</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0 text-center">
+                        <div class="text-center mb-20"><img src="img/icon_1.png"></div>
+                        <h5 class="mb-2 text-uppercase">Possibility for squatters</h5>
+                        <p>Unwanted tenants who haven’t been screened Through your system are much more likely to happen with short term renters</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0 text-center">
+                        <div class="text-center mb-20"><img src="img/icon_2.png"></div>
+                        <h5 class="mb-2 text-uppercase">Legal fees for eviction</h5>
+                        <p>Fees for filing paperwork and going through the eviction process are arduous and expensive</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0 text-center">
+                        <div class="text-center mb-20"><img src="img/icon_3.png"></div>
+                        <h5 class="mb-2 text-uppercase">Vulnerability to criminal activity</h5>
+                        <p>Short term rental allows for the possibility of people who have criminal backgrounds to be allowed in the building</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="space border-bottom-light hidden" id="plateform">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-center mx-auto reveal mb-4">
+                        <h3 class="mb-20 font-w-400">PLATFORM</h3>
+                    </div>
+                </div>
+
+                <div class="row align-items-center flex-column-reverse flex-md-row justify-content-center mt-5 mb-5">
+                    <div class="col-12 col-md-6">
+                        <div class="section-title reveal text-center text-md-left mb-80 mb-sm-50">
+                            <h4 class="mb-3 font-w-400">Using the Neighborty platform</h4>
+                            <ul>
+                                <li>Search potential tenants in our system to see if they have done Short-Term Rentals in a previous building</li>
+
+                                <li>Add tenants who have gone against your community's Short-Term Rental policies</li>
+
+                                <li>Share information between communities in your neighborhood, state and across the country.</li>
+
+                            </ul>
+                            <div class="mb-4 text-uppercase pl-3">
+                                <h6>We provide</h6>
+                                <h3>Unlimited Searches</h3>
+                                <h6>included in</h6>
+                                <h3>one Flat fee</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-right reveal">
+                        <div class="position-relative d-flex align-items-center justify-content-center z-index1">
+                            <div class="oval pos-center z-index-1"></div>
+                            <picture><img src="img/screen-1.png" alt="mobile"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Start of Footer ============ -->
+        <footer class="footer hero position-relative bg-color-darkgrey p-0" id="contact">
+            <div class="background-holder opacity-10 z-index-1" style="background-image: url(img/landing-img.jpg);background-repeat: no-repeat;"></div>
+            <div class="space border-bottom-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 text-center mx-auto reveal">
+                            <h3 class="mb-20 font-w-400">CONTACT</h3>
+                            <p class="lead mb-50">Get in touch for your Building Community to sign up &/or learn more today!</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mx-auto">
+                            <form class="form form--sm">
+                                <div class="form-row mb-20">
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="name">Your Name *</label>
+                                        <input type="text" class="form-control" id="name" placeholder="" required="">
+                                    </div>
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="">Position *</label>
+                                        <input type="text" class="form-control" id="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-20">
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="email">E-mail *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="">
+                                    </div>
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="number">Phone Number *</label>
+                                        <input type="number" class="form-control" id="number" placeholder="" required="">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-20">
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="">Building Name</label>
+                                        <input type="text" class="form-control" id="" placeholder="" required="">
+                                    </div>
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label class="label-control mb-10" for="">Building Address</label>
+                                        <input type="text" class="form-control" id="" placeholder="" required="">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-20">
+                                    <div class="form-group col-sm-12">
+                                        <label class="label-control mb-10" for="message">Your Message</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder="I'm interested in protecting my building community and signing up for Neighborty!" required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-12 text-center">
+                                        <button type="submit" class="btn btn--bg-primary btn-splash-hover btn-3d-hover"><span class="btn__text">Submit</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of main footer -->
+            <div class="bg-color-grey py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-md-flex justify-content-between align-items-center">
+                            <nav class="nav">
+                                <ul class="d-flex mb-md-0">
+                                    <li><p>© 2019, Neighborty.com <span class="sep">|</span> All Rights Reserved.</p></li>
+                                </ul>
+                            </nav>
+
+                            <div class="d-flex justify-content-between ml-auto">
+                                <div class="lang-selector position-relative">
+
+                                    <ul class="social-lists d-flex mb-0">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mini footer end -->
+        </footer>
+    </div>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

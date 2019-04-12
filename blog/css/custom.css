@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800,900');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.blockquote {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/**! ----- colors ---- **/
+.bg-color-primary, .btn--bg-primary, .navbar-sticky--on .btn, .btn--bg-grey:hover, .btn--outline:hover, .btn--outline-thick:hover, .btn-border-hover.btn--color-white:before, .card--focused, .card--outline:hover, .card--outline:focus, .social-lists li a:hover, .media-player-icon--fill-primary, .oval, .slick-active .slick-dots--long, .pagination .page-item.active .page-link {
+  background: #2f5bea;
+}
+
+.color-primary, .hero-content .btn:hover .media-player-icon--fill-grey, .btn--bg-white:hover, .btn--color-primary, .btn--color-primary:hover, .btn--color-dark.btn-text-hover:hover, .btn--outline.btn--color-primary, .btn--outline-thick.btn--color-primary, .btn-text-hover:hover, .card--focused .btn__text, .lang-selector .lang-dropdown__item:focus, .lang-selector .lang-dropdown__item:hover, .icon-rounded .icon, .media-player-icon--fill-grey:hover, .btn:hover .media-player-icon--fill-grey i, .pagination .page-item .page-link:hover, .dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active, .features--slider-2 .slick-arrow:hover i, .footer-widget ul li a:hover, .footer .nav li a:hover {
+  color: #2f5bea;
+}
+
+.features .swipe-tab.active-tab .swipe-tab__inner {
+  -webkit-box-shadow: 0px 2px 0px #2f5bea;
+          box-shadow: 0px 2px 0px #2f5bea;
+}
+
+.border-primary, .hr--blod, .btn--color-primary, .btn--color-dark.btn-text-hover:hover, .btn--outline:hover, .btn--outline-thick:hover, .btn-text-hover:hover {
+  border-color: #2f5bea;
+}
+.bg-fill-primary {
+  fill: #2f5bea;
+}
+.hero a{ color:#fff}
+.section-title p {
+  font-size: 1.2rem;
+}
+.about_ul li, #plateform ul li{
+  font-size: 18px;
+  color:#717171;
+  padding:.8rem 0 .8rem .2rem;
+}
+.about_ul li:before, #plateform ul li:before{
+  content: "\f061";
+  width: 32px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+  margin-right:0; color:#ff8e00;
+  font-family:'FontAwesome';
+}
+
+#plateform ul li{
+  padding-left:2rem;
+}
+#plateform ul li:before{
+  margin-left:-2rem;
+}
+#project h5{
+  color:#fff; height:65px;
+  font-size: 1.3rem;
+}
+.img_box{
+  width:100%; height:160px;
+  background-size:cover; background-repeat:no-repeat; background-position:center center;
+  background-color:#fff;  border-radius:.5rem;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+header .btn--sm{
+  padding: .6rem 1rem !important;  line-height: 1rem;  font-weight: 400;
+  margin-top: -2px;
+}
+
+.modal-header h1{
+  width:100%;
+  font-size:1.6rem;
+  font-weight:300;
+}
+
+.modal-header .btn-close {
+  top: 30px;
+  right:-13px;
+  border-radius: 0;
+  background-color: #000;
+  width: auto;
+  height: auto;
+  color: #fff;
+  line-height: 12px;
+  padding: 9px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  opacity:1 !important;
+}
+.modal-body .form .label-control{
+  color:#000;
+}
+.modal-body .form--sm .form-control {
+  height: 2.7375rem;
+  line-height: 2.7375rem;
+}
+.modal-body .form--sm .btn-sm {
+  padding: 0.5rem 1.2rem;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+@media (max-width:767px){
+  .align-items-lg-start.text-md-center{
+    text-align:center;
+  }
+
+  .hero__image {
+    max-width: 22rem;
+  }
+  .hero--dark .hero__title {
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 10px;
+  }
+
+  .about_ul li, #plateform ul li {
+    text-align:left;
+  }
+
+  #quick p{text-align:center;}
+
+  #plateform h4{ padding-top:2rem;}
+
+  .bg-color-grey.py-4 ul, .bg-color-grey.py-4 p, .bg-color-grey.py-4 ul.d-flex.mb-md-0 li, .bg-color-grey.py-4 .lang-selector{
+    width:100%; text-align:center;
+  }
+  .bg-color-grey.py-4 ul li{  display:inline-block;}
+  .bg-color-grey.py-4 ul.social-lists{ width:98px; margin:0 auto;}
+}
+
+
+
+
