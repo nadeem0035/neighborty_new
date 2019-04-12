@@ -1,2 +1,2 @@
-# stayluxus
-www.stayluxus.com Staging Development Repository
+# neighborty
+https://neighborty.com/ Staging Development Repository
